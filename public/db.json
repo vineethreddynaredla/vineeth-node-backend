@@ -1,0 +1,37 @@
+{"restaurents": [{
+  "id":1,
+  "nameOfRestaurent": "Lazeez Indian Cuisine",
+  "establishedDate": 2001,
+  "restInfo":"https://lazeezindiancuisine.com/",
+  "rating":"5",
+  "popularDishAvailability": true
+ },
+{ "id":1,
+  "nameOfRestaurent": "TANDOOR",
+  "establishedDate": 2002,
+  "restInfo":"https://www.newhavenindiapalace.com/?utm_source=gmb&utm_medium=website",
+  "rating":"4.1",
+  "popularDishAvailability": false
+},
+{ "id":1,
+"nameOfRestaurent": "Sherkaan",
+"establishedDate": 2003,
+"restInfo":"https://www.sherkaan.com/",
+"rating":"4.2",
+"popularDishAvailability": true
+},
+{ "id":1,
+"nameOfRestaurent": "House Of Naan",
+"establishedDate": 2004,
+"restInfo":"https://houseofnaan.com/",
+"rating":"4.3",
+"popularDishAvailability": true
+},
+{ "id":1,
+"nameOfRestaurent": "Zaroka Bar and Grill",
+"establishedDate": 2005,
+"restInfo":"https://www.orderzaroka.com/",
+"rating":"3.9",
+"popularDishAvailability": false
+}
+ ]}

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Assignment</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="bar">
+        <nav id="hamnav">
+                <label for="hamburger">&#9776;</label>
+                <input type="checkbox" id="hamburger"/>
+                <div id="hamitems">
+                <a class = "m1"href="#AboutMe">Intro</a>
+                <a class = "m1"href="#Education">Education</a>
+                <a class = "m1"href="#Experience">MyExperience</a>
+                <a class = "m1"href="#Projects">Projects</a>
+                <a class = "m1"href="#Blogs">Blogs</a>
+                <a class = "m1"href="#Contact">Contact</a>
+                </div>
+        </nav>
+        <div id ="AboutMe">
+            <h2 class = "header">Intro</h2>
+            <img class ="img"src="https://media.licdn.com/dms/image/C4E03AQHNOlR7t_1eiw/profile-displayphoto-shrink_100_100/0/1661264533889?e=1682553600&v=beta&t=Cd3BK9tnyKhZAR1UC-jtAu0HSndOHSpnppBhRgK84Dw" >
+            <section>I am Vineeth Reddy Naredla. I am software developer with 3 years experience in the IT industry. I worked for Tata Consultancy Services for 3 years. Now, I am pursuing my master's in computer science from University of New Haven. I am interested in coding and technology.
+            </section>
+        </div>
+
+        <div id="Education">
+            <h2 class = "header">Education</h2>
+            
+            <section>
+                <p><b>University of New Haven</b></p>
+                <ul>
+                    <li>Master's in computer science</li>
+                    <li>Aug 2021 to May 2023</li>
+                </ul>
+                
+                <p><b>SASTRA University</b></p>
+                <ul>
+                    <li>Electrical and instrumentation</li>
+                    <li>Bachelor of Technology</li>
+                    <li>Aug 2014 to May 2018</li>
+                </ul>
+                </section>
+            
+        </div>
+
+        <div id="Experience">
+            <h2 class = "header">MyExperience</h2>
+            
+            <section>
+                <p><b>Tata Consultancy Services</b></p>
+                <ul>
+                    <li><li>Worked as a system developer for 3 years</li>
+                    <li>Client: Western Union</li>
+                    <li>Accomplished professional with 3+ years of experience in marketing, content writing, and outreach. Experience in writing for high-authority publications like Forbes, Business Insider, and more. Looking to help Company X increase their online presence and generate more leads through content.</li>
+                    <li>Results and data-driven SEO specialist with experience in keyword research, developing and marketing evergreen content, and increasing overall website rankings. As a freelancer, I grew Company X from 50,000 daily visits to 100,000 within a year by creating long-form content and conducting backlink outreach.</li>
+                    <li>Data-driven SEM professional with 5+ years of experience with Google Analytics, AdWords, Google Display Ads, and Facebook/LinkedIn Ads. Managed a monthly advertising budget of $50,000 over 4 clients.</li>
+                    </ul>
+                </section>
+            
+        </div>
+
+        <div id="Projects">
+            <h2 class = "header">Projects</h2>
+            
+            <section>
+                <p><b>Canadian Imperial Bank of Commerce</b></p>
+                <ul>
+                    <li>Worked on multiple bank forms of a client, developing, testing, deploying the bank documents.</li>
+                    <li>Client: Canadian Imperial bank of commerce</li>
+                    <li>Created a group chat application using MulticastSocket (Java Platform SE 7) with additional capabilities for joining “groups” of other multicast hosts on the internet. Used Java’s RMI (Remote Method Invocation) to achieve encryption-decryption.</li>
+                    <li>Optimized the development of new web applications to reduce development time by 30%
+                    Increased the number of active users on the website by 60% and increased page views to 1.5 million page views per month
+                    Created an inventory management system that reduced the time to capture data by 80% and reduced the number of errors by 40%
+                    Managed developers to ensure they were delivering new features on time and with high quality
+                    Assisted a team of 2 developers in the development of a mobile application for the company's website</li>
+                </ul>
+                </section>
+            
+        </div>
+
+        
+        <div id="Blogs">
+            <h2 class = "header">Blogs</h2>
+            
+            <section>
+                 I want to write the python blog in future as I am very much interested in python programming.Apart from python, I am very much interested in cricket. I may write about cricket also in future.
+            </section>
+            
+        </div>
+
+        <footer id="Contact">
+            <div id = "icons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-whatsapp"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            </div>
+        </footer>
+    </div>
+        <script src="" async defer></script>
+    </body>
+    <style>
+        :root{
+    --main-radius:1px;
+    --main-padding:5px;
+    --red: red;
+    --babypink: lightpink;
+  
+  }
+  
+  .bar{
+    font-weight: 800;
+    font-size:1em;
+    height:100vh ;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 0.3fr;
+    grid-template-areas:
+    "nav"
+    "AboutMe"
+    "Education"
+    "Experience"
+    "Projects"
+    "Blogs"
+    "footer"
+  
+  ;
+  
+  }
+  
+  nav{
+    grid-area: nav;
+    background-color:var(--red);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: var(--main-radius);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:black;
+    
+    
+  }
+  
+  #hamnav label, #hamburger { display: none; }
+  
+  .m1{
+    margin-left:40px;
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-left: 5px;
+    display:inline;
+  }
+  
+  #AboutMe{
+    grid-area: AboutMe;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color:  var(--babypink);
+    margin-top: 5px;
+    padding-left: 10px;
+  }
+  
+  #Education{
+    grid-area: Education;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color:  var(--babypink);
+    margin-top: 5px;
+    padding-left: 10px;
+  }
+  
+  #Experience{
+    grid-area: Experience;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color:  var(--babypink);
+    margin-top: 5px;
+    padding-left: 10px;
+  }
+  
+  
+  #Projects{
+    grid-area: Projects;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color:  var(--babypink);
+    margin-top: 5px;
+    padding-left: 10px;
+  }
+  #Blogs{
+    grid-area: Blogs;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color:  var(--babypink);
+    margin-top: 5px;
+    padding-left: 10px;
+  }
+  
+  .header{
+      text-align: center;
+  }
+  
+  
+  
+  .img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height:100px;
+    padding-bottom: 10px;
+  }
+  
+  
+  
+  img{
+      border-radius: 50%;      
+  }
+  
+  
+  footer
+  {
+    grid-area:footer ;
+    background-color:var(--red);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: var(--main-radius);
+    padding-top: 20px;
+    color:black;
+    margin-top: 5px; 
+    padding-bottom: 10px;
+  }
+  
+  .fa {
+    padding-left:17px ;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    padding-top: 15px;
+    font-size: 20px;
+    height:20px;
+    width: 20px;
+    align-items: center;
+    text-decoration: none;
+    margin: auto;
+    border-radius: 50%;
+    margin-left:180px;
+  
+  }
+  
+  #icons
+  {
+      align-items: center;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  
+    
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+    
+    
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+    
+  }
+  
+  .fa-whatsapp {
+    background: #128C7E;
+    color: white;
+  }
+  
+  @media only screen and (max-width:500px){
+   
+    .container{
+      font-weight: 800;
+      font-size:1em;
+      height:100vh ;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.2fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 0.3fr;
+      grid-template-areas:
+      "nav"
+      "AboutMe"
+      "Education"
+      "Experience"
+      "Projects"
+      "Blogs"
+      "footer"
+    
+    ;
+    
+    }
+    #hamitems a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid #333;
+    }
+   
+    #hamnav label { 
+      display: inline-block; 
+      color: white;
+      background: #CC313D;
+      font-style: normal;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+  
+    #hamitems 
+    { 
+      display: none; 
+    }
+  
+    #hamnav input:checked ~ #hamitems 
+    { 
+      display: block; 
+    }
+  
+    .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+  
+    .fa{
+      margin-left:35px;
+    }
+    .m1{
+      margin-left:15px;
+    }
+    
+  }
+</style>
+</html>
